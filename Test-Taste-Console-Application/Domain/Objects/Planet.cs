@@ -28,9 +28,8 @@ namespace Test_Taste_Console_Application.Domain.Objects
                 }
                 // Using LINQ to Get Average of All Moon Gravity
                 // Using built in AVG ( )  Method
-                var avgGravityOfMoonds = planetDto.Moons.Average(x => x.Gravity);
                 // Assigning Average Gravity back to current Object's AverageMoonGravity
-                this.AverageMoonGravity = avgGravityOfMoonds;
+                this.AverageMoonGravity = planetDto.Moons.Average(x => x.Gravity);
             }            
         }
 
