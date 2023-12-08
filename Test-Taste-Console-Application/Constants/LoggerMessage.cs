@@ -8,5 +8,8 @@
             "The screen output operation failed with the following error: ";
 
         public const string FileOutputOperationFailed = "The file output operation failed with the following error: ";
+
+        // Added StackTrace Error Message String
+        public const string StackTraceErrorMessage = "Stacktrace Error: ";
     }
 }

@@ -40,6 +40,8 @@ namespace Test_Taste_Console_Application
             {
                 //The users and developers can see the thrown exceptions.
                 Logger.Instance.Error($"{LoggerMessage.ScreenOutputOperationFailed}{exception.Message}");
+                // Added StackTrace Logging
+                Logger.Instance.Error($"{LoggerMessage.StackTraceErrorMessage}{exception.StackTrace.ToString()}");
                 Console.WriteLine($"{ExceptionMessage.ScreenOutputOperationFailed}{exception.Message}");
             }
 
